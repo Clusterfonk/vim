@@ -13,3 +13,6 @@
 [submodule "vim_runtime/plugins/yuck.vim"]
 	path = vim_runtime/plugins/yuck.vim
 	url = https://github.com/elkowar/yuck.vim
+[submodule "vim_runtime/plugins/vim-gitgutter"]
+	path = vim_runtime/plugins/vim-gitgutter
+	url = https://github.com/airblade/vim-gitgutter
