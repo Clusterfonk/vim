@@ -1,0 +1,15 @@
+[submodule "vim_runtime/plugins/lightline.vim"]
+	path = vim_runtime/plugins/lightline.vim
+	url = https://github.com/itchyny/lightline.vim
+[submodule "vim_runtime/plugins/vim-easyescape"]
+	path = vim_runtime/plugins/vim-easyescape
+	url = https://github.com/zhou13/vim-easyescape
+[submodule "vim_runtime/plugins/mru"]
+	path = vim_runtime/plugins/mru
+	url = https://github.com/yegappan/mru
+[submodule "vim_runtime/plugins/vimwiki"]
+	path = vim_runtime/plugins/vimwiki
+	url = https://github.com/vimwiki/vimwiki
+[submodule "vim_runtime/plugins/yuck.vim"]
+	path = vim_runtime/plugins/yuck.vim
+	url = https://github.com/elkowar/yuck.vim
