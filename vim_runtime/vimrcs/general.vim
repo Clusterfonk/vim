@@ -57,10 +57,10 @@ let mapleader = ","
 nmap <leader>w :w!<cr>
 
 " Global clipboard
-if has("clipboard")
-    noremap <C-c> "+y"
-    noremap <C-v> "+p"
-endif
+"if has("clipboard")
+"    noremap <C-C> "+y"
+"    noremap <C-V> "+p"
+"endif
 
 " :W sudo saves the file 
 " (useful for handling the permission-denied error)
