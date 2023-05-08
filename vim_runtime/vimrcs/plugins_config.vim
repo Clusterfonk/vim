@@ -139,7 +139,6 @@ let g:lightline = {
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:indentLine_defaultGroup = 'SpecialKey'
 let g:indentLine_char_list = ['¦']
-"let g:indentLine_char_list = ['|', '¦', '┆', '┊']
 
 let g:indentLine_fileTypeExclude = ['vim']
 
@@ -163,32 +162,26 @@ let g:vimwiki_list = [{'path': '~/Documents/Notes/',
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Ale (syntax checker and linter)
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"let g:ale_linters = {
-"\   'javascript': ['eslint'],
-"\   'python': ['flake8'],
-"\   'go': ['go', 'golint', 'errcheck']
-"\}
-
-nmap <silent> <leader>a <Plug>(ale_next_wrap)
-
-" Disabling highlighting
 let g:ale_set_highlights = 1
 
 " Only run linting when saving the file
 let g:ale_lint_on_text_changed = 'never'
 let g:ale_lint_on_enter = 0
 
+nnoremap <silent> <leader>A :ALEToggle<cr>
+nmap <silent> <leader>a <Plug>(ale_next_wrap)
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Git gutter (Git diff)
+" => Git gutter
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:gitgutter_enabled=0
 let g:gitgutter_override_sign_column_highlight = 1
 
-nnoremap <silent> <leader>d :GitGutterToggle<cr>
+nnoremap <silent> <leader>D :GitGutterToggle<cr>
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => EditorConfig (project-specific EditorConfig rule)
+" => EditorConfig
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:EditorConfig_exclude_patterns = ['fugitive://.*']

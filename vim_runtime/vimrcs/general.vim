@@ -43,6 +43,8 @@ set history=500
 " Turn off netrw history
 let g:netrw_dirhistmax = 0
 
+set updatetime=100
+
 " Enable filetype plugins
 filetype plugin on
 filetype indent on
