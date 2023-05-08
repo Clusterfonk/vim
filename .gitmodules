@@ -16,3 +16,6 @@
 [submodule "vim_runtime/plugins/vim-gitgutter"]
 	path = vim_runtime/plugins/vim-gitgutter
 	url = https://github.com/airblade/vim-gitgutter
+[submodule "vim_runtime/plugins/ale"]
+	path = vim_runtime/plugins/ale
+	url = https://github.com/dense-analysis/ale

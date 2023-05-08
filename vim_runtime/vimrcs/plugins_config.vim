@@ -13,7 +13,7 @@
 "    -> Annotate Strings
 "    -> lightline
 "    -> indentLine
-"    -> Vimroom
+"    -> Goyo
 "    -> Vimwiki
 "    -> Ale
 "    -> Git gutter
@@ -106,14 +106,6 @@ map <leader>nf :NERDTreeFind<cr>
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => surround.vim config
-" Annotate strings with gettext 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-vmap Si S(i_<esc>f)
-au FileType mako vmap Si S"i${ _(<esc>2f"a) }<esc>
-
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => lightline 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:lightline = {
@@ -153,7 +145,7 @@ let g:indentLine_fileTypeExclude = ['vim']
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Vimroom
+" => Goyo
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:goyo_width=100
 let g:goyo_margin_top = 2
@@ -171,11 +163,11 @@ let g:vimwiki_list = [{'path': '~/Documents/Notes/',
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Ale (syntax checker and linter)
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:ale_linters = {
-\   'javascript': ['eslint'],
-\   'python': ['flake8'],
-\   'go': ['go', 'golint', 'errcheck']
-\}
+"let g:ale_linters = {
+"\   'javascript': ['eslint'],
+"\   'python': ['flake8'],
+"\   'go': ['go', 'golint', 'errcheck']
+"\}
 
 nmap <silent> <leader>a <Plug>(ale_next_wrap)
 
